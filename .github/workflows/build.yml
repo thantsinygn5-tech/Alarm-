@@ -18,7 +18,9 @@ jobs:
         with:
           gradle-version: '8.9'
 
-      - uses: android-actions/setup-android@v3
+          - uses: android-actions/setup-android@v3
+        with:
+          packages: 'platform-tools'
 
       - name: Extract project
         run: |
