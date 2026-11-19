@@ -24,10 +24,10 @@ jobs:
       - name: Extract project
         run: |
           unzip AlarmNote-Android-Project.zip -d source
-          cd source/AlarmNote
+          cd source
           gradle assembleDebug
 
       - uses: actions/upload-artifact@v4
         with:
           name: AlarmNote-APK
-          path: source/AlarmNote/app/build/outputs/apk/debug/app-debug.apk
+          path: source/app/build/outputs/apk/debug/app-debug.apk
